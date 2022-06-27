@@ -1,6 +1,6 @@
 ## **Recipes**
 
-Projeto de estudo, com intuíto de aprimorar boas práticas em TypeScript e React, e adquirir mais conhecimento com Sass e HeadlessUi.
+Projeto de estudo, com intuíto de aprimorar boas práticas em TypeScript, React e no coneceito de Mobile First, e também, adquirir mais conhecimento com Sass e HeadlessUi.
 
 ## 🖥 **Preview**
 
@@ -10,7 +10,7 @@ Projeto de estudo, com intuíto de aprimorar boas práticas em TypeScript e Reac
 
 (Soon)
 
-## 🚀 Tecnologias usadas.
+## 🚀 Tecnologias usadas
 - [TypeScript](https://www.typescriptlang.org)
 - [React](https://pt-br.reactjs.org)
 - [Node.js](https://nodejs.org/en)
