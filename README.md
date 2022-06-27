@@ -11,11 +11,11 @@ Projeto de estudo, com intuíto de aprimorar boas práticas em TypeScript e Reac
 (Soon)
 
 ## 🚀 Tecnologias usadas.
-- TypeScript
-- React
-- Node.js
-- Sass
-- HeadlessUi
+- [TypeScript](https://www.typescriptlang.org)
+- [React](https://pt-br.reactjs.org)
+- [Node.js](https://nodejs.org/en)
+- [Sass](https://sass-lang.com)
+- [HeadlessUi](https://headlessui.dev)
 
 ## Como executar o projeto
 
