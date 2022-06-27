@@ -1,4 +1,6 @@
-**Recipes**
+## **Recipes**
+
+Projeto de estudo, com intuíto de aprimorar boas práticas em TypeScript e React, e adquirir mais conhecimento com Sass e HeadlessUi.
 
 ##🖥 **Preview**
 
