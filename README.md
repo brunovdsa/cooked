@@ -16,7 +16,7 @@ Projeto de estudo, com intuíto de aprimorar boas práticas em TypeScript, React
 - [Node.js](https://nodejs.org/en)
 - [Sass](https://sass-lang.com)
 - [HeadlessUi](https://headlessui.dev)
-- [Spoonacular(API)](https://spoonacular.com/food-api)
+- [Spoonacular API](https://spoonacular.com/food-api)
 
 ## Como executar o projeto
 
