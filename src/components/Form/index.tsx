@@ -19,12 +19,12 @@ export default function Form() {
         <input
           className='search-input'
           type='text'
-          placeholder='Search artists, playlist or tracks'
+          placeholder='Search for your favorite food'
           onChange={(e) => setSearchKey(e.target.value)}
         />
         <button className='btn-submit' type={'submit'}></button>
       </form>
-      <section className='section-artist'>
+      <section className='section-recipe'>
         {recipesData.map((recipe: any) => (
           <div className='recipe' key={recipe.id}>
             <div className='recipe-name'>{recipe.title}</div>
