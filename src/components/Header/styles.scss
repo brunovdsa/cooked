@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.btn-menu {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.btn-menu:focus {
+  display: none;
+}
+
+.items-menu {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  right: 1.3rem;
+  margin-top: 6.5em;
+
+  width: 30%;
+
+  background-color: red;
+
+  padding: 1rem;
+}

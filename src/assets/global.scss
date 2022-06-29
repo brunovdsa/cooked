@@ -1,0 +1,13 @@
+:root {
+  --main-bg: #f1eee9;
+  --light-purple: #b3a0ce;
+  --litght-green: #d1ef53;
+  --dark-orange: #fd5e0a;
+}
+
+body {
+  background-color: var(--main-bg);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
