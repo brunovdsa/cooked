@@ -1,3 +1,9 @@
+import Main from './pages/main';
+
 export default function App() {
-  return <div className='App'>opa</div>;
+  return (
+    <div className='App'>
+      <Main />
+    </div>
+  );
 }
