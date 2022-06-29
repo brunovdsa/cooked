@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { API, API_KEY } from '../../services/api';
 
 export default function Form() {
@@ -9,7 +10,7 @@ export default function Form() {
     e.preventDefault();
 
     const data: any = await API.get(
-      `/complexSearch?query=${searchKey}&apiKey=${API_KEY}`
+      `recipes/complexSearch?query=${searchKey}&apiKey=${API_KEY}`
     );
     setRecipesData(data.data.results);
   };
@@ -33,6 +34,7 @@ export default function Form() {
             ) : (
               <div>No Image</div>
             )}
+            <Link to={`/recipe/${recipe.id}`}>Ingredients</Link>
           </div>
         ))}
       </section>

@@ -1,9 +1,9 @@
-import Main from './pages/main';
+import Router from './routes/Router';
 
 export default function App() {
   return (
-    <div className='App'>
-      <Main />
-    </div>
+    <>
+      <Router />
+    </>
   );
 }
