@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import { Menu, Transition } from '@headlessui/react';
-import { HomeIcon, MenuIcon, RecipeIcon, SearchIcon } from '../Icons';
+import { MenuIcon } from '../Icons';
 import './styles.scss';
 
 export default function MenuDropDown() {
@@ -23,7 +23,6 @@ export default function MenuDropDown() {
             <Menu.Item>
               {({ active }) => (
                 <a className={`${active && 'red'}`} href='/account-settings'>
-                  <HomeIcon />
                   <NavLink to='/'>Home</NavLink>
                 </a>
               )}
@@ -34,7 +33,6 @@ export default function MenuDropDown() {
                   className={`${active && 'bg-blue-500'}`}
                   href='/account-settings'
                 >
-                  <RecipeIcon />
                   <NavLink to='/recipe/:id'>Recipes</NavLink>
                 </a>
               )}
@@ -45,7 +43,6 @@ export default function MenuDropDown() {
                   className={`${active && 'bg-blue-500'}`}
                   href='/account-settings'
                 >
-                  <SearchIcon />
                   <NavLink to='/search'>Search</NavLink>
                 </a>
               )}
