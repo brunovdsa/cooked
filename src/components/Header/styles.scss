@@ -2,32 +2,25 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem;
+  height: 4rem;
+  padding: 0.8rem 1.5rem;
 }
 
-.btn-menu {
-  background-color: red;
+.title {
   display: flex;
   justify-content: center;
-  position: relative;
+  align-items: center;
 }
 
-.btn-menu:focus {
-  display: none;
+.title-icon {
+  color: var(--regular-red);
+  margin-right: 2px;
+  font-size: 1.5rem;
 }
 
-.items-menu {
-  position: absolute;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-
-  right: 1.3rem;
-  margin-top: 6.5em;
-
-  width: 30%;
-
-  background-color: red;
-
-  padding: 1rem;
+.main-title {
+  font-family: 'Bebas Neue', cursive;
+  font-stretch: normal;
+  font-size: 2.6rem;
+  color: var(--darker-brown);
 }

@@ -1,0 +1,51 @@
+.btn-menu {
+  background-color: var(--main-bg);
+  color: var(--darker-brown);
+  padding: 0.5rem 1.2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: none;
+}
+
+.btn-menu:active {
+  background-color: var(--active-btn);
+  border-radius: 20%;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+}
+
+.items-menu {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  right: 1.5rem;
+  width: 30%;
+
+  border: solid var(--darker-brown) 2px;
+  border-radius: 5px;
+
+  padding: 1rem;
+}
+
+.items-menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--darker-brown);
+
+  font-family: 'Kantumruy Pro', sans-serif;
+  font-weight: 500;
+}
+
+.home-icon,
+.recipe-icon,
+.search-icon {
+  font-size: 0.9rem;
+  margin-right: 0.3rem;
+}

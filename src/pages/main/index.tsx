@@ -1,12 +1,11 @@
-import { Link } from 'react-router-dom';
 import { Header } from '../../components/Header';
+import bg from '../../assets/svg/cooking.svg';
 
 export default function Main() {
   return (
     <div>
       <Header />
-      <div>opa</div>
-      <Link to='/search'>clica</Link>
+      <img alt='img' src={bg}></img>
     </div>
   );
 }

@@ -1,15 +1,20 @@
 import { memo } from 'react';
-
-import './styles.scss';
+import { TitleIcon } from '../Icons';
 
 import MenuDropDown from '../Menu';
+import './styles.scss';
 
 export function HeaderComponent() {
   return (
     <>
       <header>
-        <h1 className='title'>ReciPro</h1>
-        <MenuDropDown />
+        <div className='title'>
+          <TitleIcon />
+          <h1 className='main-title'>Cooked</h1>
+        </div>
+        <div>
+          <MenuDropDown />
+        </div>
       </header>
     </>
   );
