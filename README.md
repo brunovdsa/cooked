@@ -1,4 +1,4 @@
-## **Recipes**
+## **Cooked**
 
 Projeto de estudo, com intuíto de aprimorar boas práticas em React e no coneceito de Mobile First, e também, adquirir mais conhecimento com TypeScript, Sass e HeadlessUi.
 
