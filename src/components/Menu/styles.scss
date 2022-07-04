@@ -19,7 +19,7 @@
 .menu-icon {
   color: var(--darker-brown);
 
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .items-menu {
@@ -36,6 +36,8 @@
   border: solid var(--darker-brown) 2px;
   box-shadow: -1px 8px 10px rgba(0, 0, 0, 0.57);
   border-radius: 5px;
+
+  z-index: 15;
 }
 
 .items-menu a {
