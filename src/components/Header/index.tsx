@@ -1,4 +1,5 @@
 import { memo } from 'react';
+import { Link } from 'react-router-dom';
 import { TitleIcon } from '../Icons';
 
 import MenuDropDown from '../Menu';
@@ -9,10 +10,12 @@ export function HeaderComponent() {
   return (
     <>
       <header>
-        <div className='title'>
-          <TitleIcon />
-          <h1 className='main-title'>Cooked</h1>
-        </div>
+        <Link to={'/'} className='home-link'>
+          <div className='title'>
+            <TitleIcon />
+            <h1 className='main-title'>Cooked</h1>
+          </div>
+        </Link>
         <div className='tab-group'>
           <Tabs />
           <MenuDropDown />

@@ -21,10 +21,12 @@
     font-family: 'Kantumruy Pro', sans-serif;
     font-weight: 500;
     font-stretch: normal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--darker-brown);
 
     border: solid transparent 2px;
+
+    transition: 0.2s;
   }
 
   .link {

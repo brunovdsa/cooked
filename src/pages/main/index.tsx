@@ -15,8 +15,13 @@ export default function Main() {
             Healthy recipes shake up your comfort food favorites by adding more
             veggies and swapping out cooking method
           </p>
+          <Link className='desktop-btn' to={'/search'}>
+            Get recipes
+          </Link>
+        </section>
+        <section className='side-content'>
           <img alt='img' src={bg}></img>
-          <Link className='primary-btn' to={'/search'}>
+          <Link className='mobile-btn' to={'/search'}>
             Get recipes
           </Link>
         </section>
