@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kantumruy+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Titan+One&display=swap&family=Fugaz+One&display=swap');
 
 :root {
-  --main-bg: #f1ebdf;
-  --dark-green: #283618;
-  --regular-green: #778351;
-  --light-green: #9bac63;
+  //COLOR PALLETE
+  --main-bg: #fdfaf6;
+
+  --light-green: #e4efe7;
+  --regular-green: #0f6827;
+  --dark-green: #064420;
+  --darker-green: #020e07;
+
+  --light-yellow: #faf1e6;
   --dark-yellow: #dda15e;
   --darker-yellow: #bc6c25;
-  --light-brown: #7c5041;
-  --darker-brown: #3d190e;
+
   --regular-red: #ff3300;
+
   --active-btn: #e7dbc1;
+
+  //FONT FAMILY
+  --primary-font: 'Kantumruy Pro', sans-serif;
+  --secondary-font: 'Fugaz One', cursive;
+  --terciary-font: 'Bebas Neue', cursive;
 }
 
 body {

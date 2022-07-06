@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <>
       <Header />
-      <div className='container'>
+      <div className='main-container'>
         <section className='main-content'>
           <h1>Enjoy food from all over the world</h1>
           <p>

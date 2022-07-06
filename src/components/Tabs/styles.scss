@@ -18,11 +18,11 @@
     height: 3rem;
     background-color: transparent;
 
-    font-family: 'Kantumruy Pro', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 500;
     font-stretch: normal;
     font-size: 1.2rem;
-    color: var(--darker-brown);
+    color: var(--darker-green);
 
     border: solid transparent 2px;
 
@@ -34,7 +34,7 @@
   }
 
   .tab:hover {
-    color: var(--light-brown);
-    border-bottom: solid var(--light-brown) 2px;
+    color: var(--regular-green);
+    border-bottom: solid var(--regular-green) 2px;
   }
 }

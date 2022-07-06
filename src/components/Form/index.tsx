@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { API, API_KEY } from '../../services/api';
+import { SearchIcon } from '../Icons';
 
 export default function Form() {
   const [recipesData, setRecipesData] = useState([]);
@@ -15,26 +16,33 @@ export default function Form() {
     setRecipesData(data.data.results);
   };
   return (
-    <div>
-      <form onSubmit={search}>
+    <div className='search-container'>
+      <form onSubmit={search} className='search-form'>
         <input
           className='search-input'
           type='text'
-          placeholder='Search for your favorite food'
+          placeholder={`Search for your favorite food`}
           onChange={(e) => setSearchKey(e.target.value)}
+          tabIndex={20}
         />
-        <button className='btn-submit' type={'submit'}></button>
+        <button className='btn-submit' type={'submit'}>
+          <SearchIcon />
+        </button>
       </form>
       <section className='section-recipe'>
         {recipesData.map((recipe: any) => (
-          <div className='recipe' key={recipe.id}>
-            <div className='recipe-name'>{recipe.title}</div>
+          <div className='card' key={recipe.id}>
             {recipe.image.length ? (
-              <img width={'50%'} src={recipe.image} alt='' />
+              <img width={'100%'} src={recipe.image} alt='' />
             ) : (
               <div>No Image</div>
             )}
-            <Link to={`/recipe/${recipe.id}`}>Ingredients</Link>
+            <div className='card-info'>
+              <div className='card-title'>{recipe.title}</div>
+              <Link className='card-link' to={`/recipe/${recipe.id}`}>
+                Ingredients
+              </Link>
+            </div>
           </div>
         ))}
       </section>
