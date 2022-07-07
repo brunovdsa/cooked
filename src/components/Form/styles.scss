@@ -1,3 +1,8 @@
-.form {
-  background-color: var(--light-yellow);
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(61, 25, 14, 0.24);
+  width: 100%;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.11);
 }

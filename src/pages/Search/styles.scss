@@ -1,6 +1,4 @@
-.search-container,
-.search-form,
-.card {
+.search-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,14 +11,7 @@
   background-color: var(--main-bg);
 }
 
-.search-form {
-  border: 1px solid rgba(61, 25, 14, 0.24);
-  width: 100%;
-  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.11);
-}
-
-.search-input,
-.btn-submit {
+.search-input {
   background-color: var(--main-bg);
   border: none;
 }
@@ -40,60 +31,10 @@
   box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01),
     0px 0px 8px rgba(0, 0, 0, 0.2);
 }
-.search-icon,
-.btn-submit {
+.search-icon {
   padding: 0.5rem;
 }
 
-.section-recipe,
-.card {
+.section-recipe {
   width: 100%;
-}
-
-.card {
-  flex-direction: column;
-  padding: 0 0 1rem 0;
-  margin-top: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
-
-  background-color: var(--main-bg);
-}
-
-.card img {
-  border-radius: 10px 10px 0 0;
-  height: 350px;
-  object-fit: cover;
-}
-
-.card-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-content: center;
-
-  width: 90%;
-  padding: 0.5rem;
-}
-
-.card-title {
-  font-family: var(--primary-font);
-  font-weight: 600;
-  font-stretch: normal;
-  font-size: 1.15rem;
-  color: var(--dark-green);
-  text-decoration: none;
-  border-bottom: 1px solid var(--dark-green);
-  width: 100%;
-  padding: 0.35rem 0 0.2rem 0;
-}
-
-.card-link {
-  margin-top: 0.5rem;
-  padding: 0.35rem 0 0.35rem 0;
-  font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: var(--dark-green);
-  text-decoration: none;
 }

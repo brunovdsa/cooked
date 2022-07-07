@@ -1,7 +1,9 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { API, API_KEY } from '../../services/api';
-import { SearchIcon } from '../Icons';
+import { Button } from '../Button';
+import Card from '../Card';
+
+import './styles.scss';
 
 export default function Form() {
   const [recipesData, setRecipesData] = useState([]);
@@ -25,25 +27,11 @@ export default function Form() {
           onChange={(e) => setSearchKey(e.target.value)}
           tabIndex={20}
         />
-        <button className='btn-submit' type={'submit'}>
-          <SearchIcon />
-        </button>
+        <Button />
       </form>
       <section className='section-recipe'>
         {recipesData.map((recipe: any) => (
-          <div className='card' key={recipe.id}>
-            {recipe.image.length ? (
-              <img width={'100%'} src={recipe.image} alt='' />
-            ) : (
-              <div>No Image</div>
-            )}
-            <div className='card-info'>
-              <div className='card-title'>{recipe.title}</div>
-              <Link className='card-link' to={`/recipe/${recipe.id}`}>
-                Ingredients
-              </Link>
-            </div>
-          </div>
+          <Card id={recipe.id} image={recipe.image} title={recipe.title} />
         ))}
       </section>
     </div>
