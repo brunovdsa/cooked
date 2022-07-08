@@ -1,0 +1,24 @@
+.table-container,
+.table-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.table-container {
+  padding: 1rem 3rem 0;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.11);
+  background-color: var(--main-bg);
+}
+
+.table-header h1 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-stretch: normal;
+  font-size: 2rem;
+  color: var(--dark-green);
+  text-decoration: none;
+  border-bottom: 1px solid var(--dark-green);
+  width: 100%;
+  padding: 0.35rem 0 0.2rem 0;
+}

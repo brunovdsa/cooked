@@ -3,3 +3,12 @@ export interface ICard {
   image: string;
   title: string;
 }
+
+export interface ITable {
+  id?: number;
+  title: string;
+  image: string;
+  dishTypes?: string[];
+  instructions?: [];
+  extendedIngredients?: [];
+}

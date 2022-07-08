@@ -1,33 +1,41 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Header } from '../../components/Header';
+import Table from '../../components/Table';
 import { API, API_KEY } from '../../services/api';
 
 export default function Recipe() {
-  const [data, setData] = useState<string[]>([]);
-  //const [ingredients, setIngredients] = useState([]);
+  const [recipeId, setrecipeId] = useState<number>();
+  const [recipeTitle, setRecipeTitle] = useState<string>('');
+  const [recipeImage, setRecipeImage] = useState<string>('');
+  const [recipeType, setRecipeType] = useState<string[]>([]);
+  const [recipeInstructions, setRecipeInstructions] = useState<[]>([]);
+  const [recipeIngredients, setRecipeIngredients] = useState<[]>([]);
 
   const { id } = useParams();
 
   useEffect(() => {
     API.get(`recipes/${id}/information?apiKey=${API_KEY}`).then((res) => {
-      setData(res.data.extendedIngredients);
+      setrecipeId(res.data.id);
+      setRecipeTitle(res.data.title);
+      setRecipeImage(res.data.image);
+      setRecipeType(res.data.dishTypes);
+      setRecipeInstructions(res.data.analyzedInstructions[0].steps);
+      setRecipeIngredients(res.data.extendedIngredients);
     });
-  });
+  }, [id]);
 
-  console.log(data);
   return (
     <div>
       <Header />
-      <div>
-        {data.map((ing: any) => (
-          <div className='card' key={ing.id}>
-            <div className='card-info'>
-              <div className='card-title'>{ing.aisle}</div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <Table
+        id={recipeId}
+        title={recipeTitle}
+        image={recipeImage}
+        dishTypes={recipeType}
+        instructions={recipeInstructions}
+        extendedIngredients={recipeIngredients}
+      />
     </div>
   );
 }

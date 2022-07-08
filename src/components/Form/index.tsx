@@ -6,8 +6,8 @@ import Card from '../Card';
 import './styles.scss';
 
 export default function Form() {
-  const [recipesData, setRecipesData] = useState([]);
-  const [searchKey, setSearchKey] = useState('');
+  const [recipesData, setRecipesData] = useState<string[]>([]);
+  const [searchKey, setSearchKey] = useState<string>('');
 
   const search = async (e: any) => {
     e.preventDefault();
@@ -24,7 +24,7 @@ export default function Form() {
           className='search-input'
           type='text'
           placeholder={`Search for your favorite food`}
-          onChange={(e) => setSearchKey(e.target.value)}
+          onChange={(e: any) => setSearchKey(e.target.value)}
           tabIndex={20}
         />
         <Button />

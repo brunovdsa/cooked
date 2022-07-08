@@ -3,7 +3,7 @@ import { Header } from '../../components/Header';
 
 import './styles.scss';
 
-export default function Main() {
+export default function Search() {
   return (
     <div>
       <Header />
