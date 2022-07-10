@@ -10,7 +10,7 @@ export default function Table(props: ITable) {
   //  const dishTypes: any = props.dishTypes;
 
   return (
-    <>
+    <div className='table-box'>
       <table className='table-container'>
         <th className='table-header'>
           <h1>{props.title}</h1>
@@ -36,6 +36,6 @@ export default function Table(props: ITable) {
           </div>
         </tbody>
       </table>
-    </>
+    </div>
   );
 }

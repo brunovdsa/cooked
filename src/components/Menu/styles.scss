@@ -10,6 +10,8 @@
   padding: 0.5rem 1.2rem;
 
   border: none;
+
+  z-index: 1;
 }
 
 .btn-menu:active {
@@ -30,14 +32,13 @@
   right: 1.5rem;
   position: absolute;
 
-  padding: 1rem;
+  padding: 1.5rem;
   width: 30%;
 
+  background-color: var(--main-bg);
   border: solid var(--darker-brown) 2px;
   box-shadow: -1px 8px 10px rgba(0, 0, 0, 0.57);
   border-radius: 5px;
-
-  z-index: 15;
 }
 
 .items-menu a {
@@ -49,6 +50,7 @@
   font-weight: 500;
   color: var(--darker-brown);
   text-decoration: none;
+  padding: 0.2rem 0;
 }
 
 .items-menu a:active {
