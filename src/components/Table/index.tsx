@@ -1,38 +1,40 @@
 import { ITable } from '../../interfaces';
+import { H1, H2, P } from '../Typography';
 
 import './styles.scss';
 
 export default function Table(props: ITable) {
-  const instructions: any = props.instructions;
-
+  // const dishTypes: any = props.dishTypes;
   const ingredients: any = props.extendedIngredients;
-
-  //  const dishTypes: any = props.dishTypes;
+  const instructions: any = props.instructions;
 
   return (
     <div className='table-box'>
       <table className='table-container'>
         <th className='table-header'>
-          <h1>{props.title}</h1>
+          <H1 content={props.title} />
           <img src={props.image} alt={props.title} />
-          <span>{props.dishTypes}</span>
+          {/* <P content={dishTypes.map((dish: any) => dish)} /> */}
         </th>
-        <tbody>
+        <tbody className='table-body'>
           <div className='ingredients'>
-            <h2>Ingredients</h2>
+            <H2 content={'Ingredients'} />
             <ul className='ingredients-list'>
               {ingredients.map((ingredient: any) => (
-                <li className='ingredient'>{`${ingredient.name} | ${ingredient.amount} ${ingredient.unit}`}</li>
+                <li
+                  key={ingredient.id}
+                  className='ingredient'
+                >{`${ingredient.name} | ${ingredient.amount} ${ingredient.unit}`}</li>
               ))}
             </ul>
           </div>
           <div className='instructions'>
-            <h2>Method</h2>
-            <ul className='instructions-list'>
+            <H2 content={'Method'} />
+            <ol className='instructions-list'>
               {instructions.map((instruction: any) => (
                 <li className='instruction'>{instruction.step}</li>
               ))}
-            </ul>
+            </ol>
           </div>
         </tbody>
       </table>

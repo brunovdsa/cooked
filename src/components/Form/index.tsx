@@ -8,24 +8,31 @@ import './styles.scss';
 export default function Form() {
   const [recipesData, setRecipesData] = useState<string[]>([]);
   const [searchKey, setSearchKey] = useState<string>('');
+  const [recipeId, setRecipeId] = useState<number>();
+
+  // const [error, setError] = useState<boolean>(true);
 
   const search = async (e: any) => {
     e.preventDefault();
 
     const data: any = await API.get(
       `recipes/complexSearch?query=${searchKey}&apiKey=${API_KEY}`
-    );
+    ); // ).then(() => setError(false));
     setRecipesData(data.data.results);
+    recipesData.map((res: any) => {
+      return setRecipeId(res.id);
+    });
   };
+
   return (
     <div className='search-container'>
-      <form onSubmit={search} className='search-form'>
+      <form onSubmit={search} className='search-form' key={recipeId}>
         <input
           className='search-input'
           type='text'
           placeholder={`Search for your favorite food`}
           onChange={(e: any) => setSearchKey(e.target.value)}
-          tabIndex={20}
+          tabIndex={1}
         />
         <Button />
       </form>

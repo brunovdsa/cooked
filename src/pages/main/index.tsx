@@ -3,6 +3,7 @@ import bg from '../../assets/svg/cooking.svg';
 
 import './styles.scss';
 import { Link } from 'react-router-dom';
+import { H1, H2 } from '../../components/Typography';
 
 export default function Main() {
   return (
@@ -10,11 +11,12 @@ export default function Main() {
       <Header />
       <div className='main-container'>
         <section className='main-content'>
-          <h1>Enjoy food from all over the world</h1>
-          <p>
-            Healthy recipes shake up your comfort food favorites by adding more
-            veggies and swapping out cooking method
-          </p>
+          <H1 content={'Enjoy food from all over the world.'} />
+          <H2
+            content={
+              'Healthy recipes shake up your comfort food favorites by adding more veggies and swapping out cooking method'
+            }
+          />
           <Link className='desktop-btn' to={'/search'}>
             Get recipes
           </Link>

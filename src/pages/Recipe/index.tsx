@@ -15,7 +15,7 @@ export default function Recipe() {
   const { id } = useParams();
 
   useEffect(() => {
-    API.get(`recipes/${id}/information?apiKey=${API_KEY}`).then((res) => {
+    API.get(`recipes/${id}/information?apiKey=${API_KEY}`).then((res: any) => {
       setrecipeId(res.data.id);
       setRecipeTitle(res.data.title);
       setRecipeImage(res.data.image);

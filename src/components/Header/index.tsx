@@ -4,6 +4,7 @@ import { TitleIcon } from '../Icons';
 
 import MenuDropDown from '../Menu';
 import { Tabs } from '../Tabs';
+import { H1 } from '../Typography';
 import './styles.scss';
 
 export function HeaderComponent() {
@@ -13,7 +14,7 @@ export function HeaderComponent() {
         <Link to={'/'} className='home-link'>
           <div className='title'>
             <TitleIcon />
-            <h1 className='main-title'>Cooked</h1>
+            <H1 className={'teste'} content={'Cooked'} />
           </div>
         </Link>
         <div className='tab-group'>

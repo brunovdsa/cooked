@@ -1,35 +1,82 @@
+.table-box,
+.table-container {
+  background-color: var(--main-bg);
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
 .table-box {
-  padding: 0 2rem 0;
+  padding: 1em 2rem 2rem;
 }
 
 .table-container {
   border-radius: 10px;
-  box-shadow: inset 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
 
-  background-color: var(--main-bg);
+.table-container,
+.table-header,
+.table-header h1,
+.table-header p,
+.table-container h2 {
+  display: flex;
+  justify-content: center;
 }
 
 .table-container,
 .table-header {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
 .table-container {
-  padding: 1rem 3rem 0;
-  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.11);
-  background-color: var(--main-bg);
+  padding: 1rem 1rem 0;
+}
+
+.table-header h1,
+.table-container h2,
+.table-header p {
+  text-decoration: none;
+  font-stretch: normal;
+  width: 100%;
+}
+.table-header h1,
+.table-container h2 {
+  border-bottom: 1px solid var(--dark-green);
+  padding: 0.35rem 0 0.2rem 0;
 }
 
 .table-header h1 {
-  font-family: var(--primary-font);
-  font-weight: 600;
-  font-stretch: normal;
-  font-size: 2rem;
   color: var(--dark-green);
-  text-decoration: none;
-  border-bottom: 1px solid var(--dark-green);
-  width: 100%;
-  padding: 0.35rem 0 0.2rem 0;
+  font-family: var(--terciary-font);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.table-container h2 {
+  color: var(--dark-green);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.55rem;
+  padding: 0.5rem 0;
+}
+
+.table-header p {
+  align-items: center;
+  flex-direction: row;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--dark-green);
+  margin: 0.5rem 0 0 0;
+}
+
+.table-body .ingredients-list {
+  list-style-type: circle;
+}
+
+.ingredients-list .ingredient,
+.instructions-list .instruction {
+  font-family: var(--primary-font);
+  color: var(--darker-green);
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
 }
