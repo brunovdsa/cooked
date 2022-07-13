@@ -1,13 +1,20 @@
+import { Link } from 'react-router-dom';
+
+import { Helmet } from 'react-helmet';
 import { Header } from '../../components/Header';
 import bg from '../../assets/svg/cooking.svg';
 
 import './styles.scss';
-import { Link } from 'react-router-dom';
 import { H1, H2 } from '../../components/Typography';
 
 export default function Main() {
   return (
     <>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Cooked - Home</title>
+        <link rel='canonical' href='http://mysite.com/example' />
+      </Helmet>
       <Header />
       <div className='main-container'>
         <section className='main-content'>

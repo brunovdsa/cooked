@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
 import { Header } from '../../components/Header';
 import Table from '../../components/Table';
@@ -31,6 +32,11 @@ export default function Recipe() {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>{`Cooked - ${recipeTitle}`}</title>
+        <link rel='canonical' href='http://mysite.com/example' />
+      </Helmet>
       <Header />
       <Table
         id={recipeId}
