@@ -4,10 +4,19 @@ Projeto de estudo, com intuíto de aprimorar boas práticas em React e no conece
 
 ## 🖥 **Preview**
 
-(Soon)   
+## Screenshots cadDev
+<p aling="center">
+    <img src="src/assets/to_readme/Desktop - Home.png">
+</p>
+<p aling="center">
+    <img src="src/assets/to_readme/Desktop2.png">
+</p>
 
 ## 📱 **Mobile Preview**
-
+  <p aling="center">
+    <img src="src/assets/to_readme/Mobile1.png">
+    <img src="src/assets/to_readme/Mobile2.png">
+</p>   
 (Soon)
 
 ## 🚀 Tecnologias usadas
