@@ -8,9 +8,11 @@ export default function Recipe() {
   const [recipeId, setrecipeId] = useState<number>();
   const [recipeTitle, setRecipeTitle] = useState<string>('');
   const [recipeImage, setRecipeImage] = useState<string>('');
-  const [recipeType, setRecipeType] = useState<string[]>([]);
+  const [diets, setDiets] = useState<string[]>([]);
   const [recipeInstructions, setRecipeInstructions] = useState<[]>([]);
   const [recipeIngredients, setRecipeIngredients] = useState<[]>([]);
+  const [servings, setServings] = useState<number>();
+  const [readyIn, setreadyIn] = useState<number>();
 
   const { id } = useParams();
 
@@ -18,8 +20,10 @@ export default function Recipe() {
     API.get(`recipes/${id}/information?apiKey=${API_KEY}`).then((res: any) => {
       setrecipeId(res.data.id);
       setRecipeTitle(res.data.title);
+      setServings(res.data.servings);
+      setreadyIn(res.data.readyInMinutes);
       setRecipeImage(res.data.image);
-      setRecipeType(res.data.dishTypes);
+      setDiets(res.data.diets);
       setRecipeInstructions(res.data.analyzedInstructions[0].steps);
       setRecipeIngredients(res.data.extendedIngredients);
     });
@@ -32,9 +36,11 @@ export default function Recipe() {
         id={recipeId}
         title={recipeTitle}
         image={recipeImage}
-        dishTypes={recipeType}
+        diets={diets}
         instructions={recipeInstructions}
         extendedIngredients={recipeIngredients}
+        readyInMinutes={readyIn}
+        servings={servings}
       />
     </div>
   );

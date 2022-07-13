@@ -10,9 +10,11 @@ export interface ITable {
   title: string;
   image: string;
   className?: string;
-  dishTypes?: string[];
+  diets?: string[];
   instructions?: [];
   extendedIngredients?: [];
+  readyInMinutes?: number;
+  servings?: number;
 }
 
 export interface IPrimaryTitle {

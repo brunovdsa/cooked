@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBars,
+  faClock,
   faFire,
   faHouse,
   faMagnifyingGlass,
@@ -25,4 +26,12 @@ export function RecipeIcon() {
 
 export function SearchIcon() {
   return <FontAwesomeIcon icon={faMagnifyingGlass} className='search-icon' />;
+}
+
+export function ClockIcon() {
+  return <FontAwesomeIcon icon={faClock} className='clock-icon' />;
+}
+
+export function UtensilsIcon() {
+  return <FontAwesomeIcon icon={faUtensils} className='utensils-icon' />;
 }

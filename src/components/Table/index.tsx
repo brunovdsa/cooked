@@ -1,12 +1,16 @@
 import { ITable } from '../../interfaces';
+import { ClockIcon, UtensilsIcon } from '../Icons';
 import { H1, H2 } from '../Typography';
 
 import './styles.scss';
 
 export default function Table(props: ITable) {
-  // const dishTypes: any = props.dishTypes;
+  const diets: any = props.diets;
   const ingredients: any = props.extendedIngredients;
   const instructions: any = props.instructions;
+
+  const readyIn: any = props.readyInMinutes;
+  const servings: any = props.servings;
 
   function capitalizeFirstLetter(letter: string) {
     return letter.charAt(0).toUpperCase() + letter.slice(1);
@@ -17,8 +21,28 @@ export default function Table(props: ITable) {
       <table className='table-container'>
         <th className='table-header'>
           <H1 content={props.title} />
-          <img src={props.image} alt={props.title} />
-          {/* <P content={dishTypes.map((dish: any) => dish)} /> */}
+          <div className='recipe-info'>
+            <img src={props.image} alt={props.title} />
+            <div className='container-info'>
+              <div className='detailed-info'>
+                <ul className='prep-list'>
+                  <li>
+                    <ClockIcon />
+                    {`Ready in ${readyIn} minutes`}
+                  </li>
+                  <li>
+                    <UtensilsIcon />
+                    {`Serves ${servings} portions`}
+                  </li>
+                </ul>
+                <ul className='diet-list'>
+                  {diets.map((diet: any) => (
+                    <li>{capitalizeFirstLetter(diet)}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
         </th>
         <tbody className='table-body'>
           <div className='ingredients'>
@@ -26,9 +50,10 @@ export default function Table(props: ITable) {
             <ul className='ingredients-list'>
               {ingredients.map((ingredient: any) => (
                 <li key={ingredient.id} className='ingredient'>
-                  {`${capitalizeFirstLetter(`${ingredient.name}`)} | 
-                    ${ingredient.amount} 
-                    ${capitalizeFirstLetter(`${ingredient.unit}`)}`}
+                  {`${ingredient.amount}
+                    ${capitalizeFirstLetter(`${ingredient.unit}`)} of 
+                    ${capitalizeFirstLetter(`${ingredient.name}`)}
+                    `}
                 </li>
               ))}
             </ul>

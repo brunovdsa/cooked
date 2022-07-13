@@ -58,6 +58,10 @@
   padding: 0.5rem 0;
 }
 
+.table-header img {
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
 .table-header p {
   align-items: center;
   flex-direction: row;
@@ -78,4 +82,120 @@
   color: var(--darker-green);
   font-size: 1.1rem;
   padding: 0.5rem 0;
+}
+
+@media (min-width: 1850px) {
+  .table-box {
+    padding: 1em 4rem 2rem;
+  }
+
+  .table-container,
+  .table-header h1,
+  .table-body,
+  .recipe-info,
+  .container-info,
+  .container-info ul,
+  .detailed-info,
+  .diet-list {
+    display: flex;
+  }
+
+  .table-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .table-container {
+    padding: 1rem 3rem 2rem;
+  }
+
+  .table-header {
+    width: 95%;
+    gap: 1rem;
+  }
+
+  .table-header h1 {
+    justify-content: flex-start;
+  }
+
+  .recipe-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipe-info img {
+    width: 45%;
+    margin-top: 1rem;
+  }
+
+  .container-info {
+    flex-direction: column;
+    width: 45%;
+  }
+
+  .container-info ul {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .detailed-info {
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  .detailed-info ul {
+    width: 100%;
+    align-items: flex-start;
+    list-style-type: none;
+  }
+
+  .prep-list,
+  .diet-list {
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+    width: 100%;
+  }
+  .prep-list li,
+  .diet-list li {
+    padding: 1rem 0;
+    font-family: var(--primary-font);
+    color: var(--dark-green);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .diet-list li,
+  .prep-list li {
+    width: 50%;
+    padding: 1rem 0;
+  }
+
+  .prep-list {
+    border-bottom: 1px solid var(--dark-green);
+  }
+
+  .diet-list {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .diet-list li {
+    width: 100%;
+  }
+  .clock-icon,
+  .utensils-icon {
+    margin-right: 0.5rem;
+  }
+
+  .table-body {
+    gap: 1rem;
+  }
+
+  .ingredients,
+  .instructions {
+    width: 50%;
+    padding: 3rem;
+  }
 }
