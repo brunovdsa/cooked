@@ -33,16 +33,6 @@ export default function MenuDropDown() {
                   className={`${active && 'bg-blue-500'}`}
                   href='/account-settings'
                 >
-                  <NavLink to='/recipe/:id'>Recipes</NavLink>
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  className={`${active && 'bg-blue-500'}`}
-                  href='/account-settings'
-                >
                   <NavLink to='/search'>Search</NavLink>
                 </a>
               )}

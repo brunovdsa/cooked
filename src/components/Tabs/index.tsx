@@ -10,9 +10,6 @@ export function Tabs() {
         <Link to={'/'} className='link'>
           <Tab className='tab'>Home</Tab>
         </Link>
-        <Link to={'/recipes/'} className='link'>
-          <Tab className='tab'>Recipes</Tab>
-        </Link>
         <Link to={'/search'} className='link'>
           <Tab className='tab'>Search</Tab>
         </Link>
