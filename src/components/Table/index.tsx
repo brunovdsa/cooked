@@ -1,5 +1,5 @@
 import { ITable } from '../../interfaces';
-import { H1, H2, P } from '../Typography';
+import { H1, H2 } from '../Typography';
 
 import './styles.scss';
 
@@ -7,6 +7,10 @@ export default function Table(props: ITable) {
   // const dishTypes: any = props.dishTypes;
   const ingredients: any = props.extendedIngredients;
   const instructions: any = props.instructions;
+
+  function capitalizeFirstLetter(letter: string) {
+    return letter.charAt(0).toUpperCase() + letter.slice(1);
+  }
 
   return (
     <div className='table-box'>
@@ -21,10 +25,11 @@ export default function Table(props: ITable) {
             <H2 content={'Ingredients'} />
             <ul className='ingredients-list'>
               {ingredients.map((ingredient: any) => (
-                <li
-                  key={ingredient.id}
-                  className='ingredient'
-                >{`${ingredient.name} | ${ingredient.amount} ${ingredient.unit}`}</li>
+                <li key={ingredient.id} className='ingredient'>
+                  {`${capitalizeFirstLetter(`${ingredient.name}`)} | 
+                    ${ingredient.amount} 
+                    ${capitalizeFirstLetter(`${ingredient.unit}`)}`}
+                </li>
               ))}
             </ul>
           </div>

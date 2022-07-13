@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { Link } from 'react-router-dom';
 import { TitleIcon } from '../Icons';
 
-import MenuDropDown from '../Menu';
+import MenuDropDown from '../Dropdown';
 import { Tabs } from '../Tabs';
 import { H1 } from '../Typography';
 import './styles.scss';

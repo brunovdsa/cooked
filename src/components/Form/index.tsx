@@ -26,21 +26,25 @@ export default function Form() {
 
   return (
     <div className='search-container'>
-      <form onSubmit={search} className='search-form' key={recipeId}>
-        <input
-          className='search-input'
-          type='text'
-          placeholder={`Search for your favorite food`}
-          onChange={(e: any) => setSearchKey(e.target.value)}
-          tabIndex={1}
-        />
-        <Button />
-      </form>
-      <section className='section-recipe'>
-        {recipesData.map((recipe: any) => (
-          <Card id={recipe.id} image={recipe.image} title={recipe.title} />
-        ))}
-      </section>
+      <div className='form-content'>
+        <form onSubmit={search} className='search-form' key={recipeId}>
+          <input
+            className='search-input'
+            type='text'
+            placeholder={`Search for your favorite food`}
+            onChange={(e: any) => setSearchKey(e.target.value)}
+            tabIndex={1}
+          />
+          <Button />
+        </form>
+      </div>
+      <div className='results-content'>
+        <section className='section-recipe'>
+          {recipesData.map((recipe: any) => (
+            <Card id={recipe.id} image={recipe.image} title={recipe.title} />
+          ))}
+        </section>
+      </div>
     </div>
   );
 }
