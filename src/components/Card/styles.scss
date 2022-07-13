@@ -58,6 +58,15 @@
   .card img {
     height: 250px;
   }
+  .card:hover {
+    transform: translate(-1px, -2px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .card-title:hover,
+  .card-link:hover {
+    color: var(--regular-green);
+  }
 }
 @media (min-width: 1850px) {
   .card {
