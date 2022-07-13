@@ -27,6 +27,9 @@ Projeto de estudo, com intuíto de aprimorar boas práticas em React e no conece
 <p aling="center">
     <img src="src/assets/to_readme/DesktopRecipe2.png">
 </p>
+<p aling="center">
+    <img src="src/assets/to_readme/Desktop404.png">
+</p>
 
 ## 📱 **Mobile Preview**
 <p aling="center">
@@ -40,7 +43,10 @@ Projeto de estudo, com intuíto de aprimorar boas práticas em React e no conece
 </p>
 <p aling="center">
     <img src="src/assets/to_readme/MobileRecipe2.jpg">
-</p>  
+</p> 
+<p aling="center">
+    <img src="src/assets/to_readme/Mobile404.jpg">
+</p>
 
 ## Como executar o projeto
 
