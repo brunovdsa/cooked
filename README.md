@@ -4,12 +4,12 @@ Projeto de estudo, com intuíto de aprimorar boas práticas em React e no conece
 
 ## 🖥 **Preview**
 
-## Screenshots cadDev
 <p aling="center">
     <img src="src/assets/to_readme/DesktopHome.png">
+    <img src="src/assets/to_readme/DesktopSearch.png">
 </p>
 <p aling="center">
-    <img src="src/assets/to_readme/DesktopSearch.png">
+    
 </p>
 <p aling="center">
     <img src="src/assets/to_readme/DesktopRecipe1.png">
