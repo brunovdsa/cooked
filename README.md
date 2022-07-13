@@ -2,6 +2,16 @@
 
 Projeto de estudo, com intuíto de aprimorar boas práticas em React e no coneceito de Mobile First, e também, adquirir mais conhecimento com TypeScript, Sass e HeadlessUi.
 
+
+## 🚀 Tecnologias usadas
+- [TypeScript](https://www.typescriptlang.org)
+- [React](https://pt-br.reactjs.org)
+- [Node.js](https://nodejs.org/en)
+- [Sass](https://sass-lang.com)
+- [HeadlessUi](https://headlessui.dev)
+- [Spoonacular API](https://spoonacular.com/food-api)
+
+
 ## 🖥 **Preview**
 
 <p aling="center">
@@ -31,15 +41,6 @@ Projeto de estudo, com intuíto de aprimorar boas práticas em React e no conece
 <p aling="center">
     <img src="src/assets/to_readme/MobileRecipe2.jpg">
 </p>  
-(Soon)
-
-## 🚀 Tecnologias usadas
-- [TypeScript](https://www.typescriptlang.org)
-- [React](https://pt-br.reactjs.org)
-- [Node.js](https://nodejs.org/en)
-- [Sass](https://sass-lang.com)
-- [HeadlessUi](https://headlessui.dev)
-- [Spoonacular API](https://spoonacular.com/food-api)
 
 ## Como executar o projeto
 
