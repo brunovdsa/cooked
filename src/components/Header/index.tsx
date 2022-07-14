@@ -14,7 +14,7 @@ export function HeaderComponent() {
         <Link to={'/'} className='home-link'>
           <div className='title'>
             <TitleIcon />
-            <H1 content={'Cooked'} />
+            <H1 className='main-title' content={'Cooked'} />
           </div>
         </Link>
         <div className='tab-group'>
